@@ -32,6 +32,8 @@ Sample foods array, i.e. INPUT:
     }
   ]
 
+  
+
 Expected OUTPUT for this sample
   [
     'Bacon is not suitable for vegetarians',
@@ -42,10 +44,13 @@ Expected OUTPUT for this sample
 
 */
 
+const arrayTest = [{food: 'Bacon', isVegetarian: false}, {food: 'Tofu', isVegetarian: true}, {food: 'Sausage', isVegetarian: false},];
+
 function getFoodCategories(foods) {
+  return foods.map((food, isVegetarian) => isVegetarian === true ? `${food} is suitable for vegetarians` : `${food} is not suitable for vegetarians`)
 }
 
-
+console.log(getFoodCategories(arrayTest));
 
 // DON'T TOUCH THIS!
 module.exports = getFoodCategories;
