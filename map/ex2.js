@@ -44,7 +44,7 @@ Expected OUTPUT for this sample
 
 */
 
-const arrayTest = [{food: 'Bacon', isVegetarian: false}, {food: 'Tofu', isVegetarian: true}, {food: 'Sausage', isVegetarian: false},];
+// const arrayTest = [{food: 'Bacon', isVegetarian: false}, {food: 'Tofu', isVegetarian: true}, {food: 'Sausage', isVegetarian: false},];
 
 
 
@@ -54,7 +54,7 @@ function getFoodCategories(foods) {
 
 
 
-console.log(getFoodCategories(arrayTest));
+// console.log(getFoodCategories(arrayTest));
 
 // DON'T TOUCH THIS!
 module.exports = getFoodCategories;
